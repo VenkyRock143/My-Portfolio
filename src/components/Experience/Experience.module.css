@@ -22,14 +22,14 @@
   margin-top: 50px;
 }
 
-.history {
+.experience {
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.historyItem {
+.experienceItem {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,25 +40,25 @@
   padding: 24px;
 }
 
-.historyItem img {
+.experienceItem img {
   width: 100px;
 }
 
-.historyItemDetails {
+.experienceItemDetails {
   font-family: var(--font-roboto);
 }
 
-.historyItemDetails h3 {
+.experienceItemDetails h3 {
   font-size: 30px;
   font-weight: 500;
 }
 
-.historyItemDetails p {
+.experienceItemDetails p {
   font-size: 20px;
   font-weight: 300;
 }
 
-.historyItemDetails ul {
+.experienceItemDetails ul {
   margin-top: 6px;
   list-style-position: inside;
   font-size: 25px;
@@ -73,27 +73,27 @@
     gap: 34px;
   }
 
-  .history {
+  .experience {
     width: 100%;
     gap: 9px;
   }
   .title{
     text-align: center;
   }
-  .historyItem {
+  .experienceItem {
     display: flex;
     flex-direction: column;
   }
-  .historyItemDetails h3{
+  .experienceItemDetails h3{
     font-size: 18px;
     font-weight: 500;
   }
-  .historyItemDetails p{
+  .experienceItemDetails p{
     font-size: 14px;
     font-weight: 500;
   }
   
-  .historyItemDetails ul {
+  .experienceItemDetails ul {
     font-size: 14px;
     font-weight: 300;
   }
