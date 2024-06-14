@@ -1,0 +1,11 @@
+[
+  {
+    "role": " Teaching Assistant",
+    "organisation": "Coding Ninjas",
+    "startDate": "Dec, 2022",
+    "endDate": "Mar, 2023",
+    "experiences": ["Taking doubt sessions ", "Debugging codes", "Assisting Students in their assignments"],
+    "imageSrc": "experience/Coding Ninjas.png"
+  }
+]
+
