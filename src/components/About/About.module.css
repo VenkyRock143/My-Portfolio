@@ -72,6 +72,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .title{
+    text-align: center;
+  }
 
   .content {
     flex-direction: column;
@@ -83,10 +86,19 @@
 
   .aboutItems {
     margin-top: 29px;
+    
   }
 
   .aboutItem {
     padding-left: 0;
     padding-right: 0;
+    flex-direction: column;
+    
   }
+  .aboutItem p{
+  font-size: 14px; 
+  }
+  .aboutItem h3{
+    font-size: 20px; 
+    }
 }

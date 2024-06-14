@@ -1,26 +1,66 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Task Manager",
+    "imageSrc": "projects/Task Manager.jpg",
+    "description": "The Task Manager app allows users to create, update, delete, and filter tasks.",
+    "skills": ["React", "Firebase"],
+    "demo": "https://master--task-managerrock.netlify.app/",
+    "source": "https://github.com/VenkyRock143/Task-Manager"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Habit Tracker",
+    "imageSrc": "projects/habittracker.gif",
+    "description": "We can keep track of our daily habits using these app.",
+    "skills": ["Node", "Express", "MangoDB", "ejs"],
+    "demo": "https://habi-tracker.onrender.com/",
+    "source": "https://github.com/VenkyRock143/Habit-Tracker"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Meal App",
+    "imageSrc": "projects/mealapp.gif",
+    "description": "We can fetch all types food reciepe using this app.",
+    "skills": ["HTML", "CSS", "Javascript"],
+    "demo": "https://venky-meal-app.netlify.app/",
+    "source": "https://github.com/VenkyRock143/meal.github.io"
+  },
+  {
+    "title": "Codial",
+    "imageSrc": "projects/codial.gif",
+    "description": "Codial is a web application designed for managing and sharing content.",
+    "skills": ["Node", "Express", "MangoDB", "sass"],
+    "demo": "https://codial-qtar.onrender.com",
+    "source": "https://github.com/VenkyRock143/Codial"
+  },
+  {
+    "title": "Ipod Music Player",
+    "imageSrc": "projects/ipod.gif",
+    "description": "These iPod Music player have made it easy for users to listen music on the go with a web app",
+    "skills": ["React", "zingtouch", "loader-util"],
+    "demo": "https://venky-ipod-app.netlify.app/",
+    "source": "https://github.com/VenkyRock143/iPod.github.io"
+  },
+  {
+    "title": "CSV Upload",
+    "imageSrc": "projects/csvupload.gif",
+    "description": "By using this app we can upload any number of .csv files and we can view them.",
+    "skills": ["Node", "Express", "MangoDB", "csv"],
+    "demo": "https://csv-upload-1-pk7u.onrender.com/",
+    "source": "https://github.com/VenkyRock143/CSV-Upload"
+  },
+  {
+    "title": "Music Player",
+    "imageSrc": "projects/musicplayer.gif",
+    "description": "Music player application developed using HTML, CSS, and JavaScript.",
+    "skills": ["HTML", "CSS", "Javascript"],
+    "demo": "https://venkyrock143.github.io/Music-Player.github.io/",
+    "source": "https://github.com/VenkyRock143/Music-Player.github.io"
+  },
+  {
+    "title": "Alarm Clock",
+    "imageSrc": "projects/alarm.gif",
+    "description": "Alarm clock application developed using only HTML, CSS, and JavaScript",
+    "skills": ["HTML", "CSS", "Javascript"],
+    "demo": "https://venky-alarm-clock.netlify.app/",
+    "source": "https://github.com/VenkyRock143/Alarm-Clock.github.io"
   }
 ]
