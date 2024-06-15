@@ -12,7 +12,7 @@ export const Hero = () => {
           I'm a Full Stack Developer with hands-on experience in building and maintaining web applications using the MERN stack. 
           Proficient in JavaScript, React, Node.js, and MongoDB!
         </p>
-        <a href="https://drive.google.com/file/d/1F0CgCj9g1758wgjxB-dy_Dsyf-KC6DbK/view?usp=drive_link" 
+        <a href="https://drive.google.com/file/d/1fVuOeYw4HmnsZGDyIfwMXyB1yIYYQoO7/view?usp=sharing" 
         className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
           My Resume
         </a>
