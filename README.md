@@ -29,9 +29,9 @@ I am a dedicated software developer with a strong foundation in computer science
 
 ## 📫 Contact
 
-- **Email:** venkyrock143@example.com
-- **LinkedIn:** [linkedin.com/in/venkyrock143](https://linkedin.com/in/venkyrock143)
+- **Email:** venky.balusani1@gmail.com
+- **LinkedIn:** [linkedin](https://www.linkedin.com/in/venkatesh-balusani-9724aa180/)
 - **GitHub:** [github.com/VenkyRock143](https://github.com/VenkyRock143)
-- **Coding Ninjas Studio:** [certificate.codingninjas.com/coding_recap/203b25892b3dfb4b](https://certificate.codingninjas.com/coding_recap/203b25892b3dfb4b)
+- **Coding Ninjas Studio:** [Coding Ninjas coding_recap](https://certificate.codingninjas.com/coding_recap/203b25892b3dfb4b)
 
 Feel free to explore my projects and reach out if you have any questions or opportunities. Thank you for visiting!
