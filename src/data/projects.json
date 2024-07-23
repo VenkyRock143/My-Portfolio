@@ -3,7 +3,7 @@
     "title": "Task Manager",
     "imageSrc": "projects/Task Manager.jpg",
     "description": "The Task Manager app allows users to create, update, delete, and filter tasks.",
-    "skills": ["React", "Firebase"],
+    "skills": ["React", "NodeJs", "MongoDB", "ExpressJs"],
     "demo": "https://master--task-managerrock.netlify.app/",
     "source": "https://github.com/VenkyRock143/Task-Manager"
   },
