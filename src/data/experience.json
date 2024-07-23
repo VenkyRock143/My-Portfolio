@@ -4,7 +4,9 @@
     "organisation": "Coding Ninjas",
     "startDate": "Dec, 2022",
     "endDate": "Mar, 2023",
-    "experiences": ["Taking doubt sessions ", "Debugging codes", "Assisting Students in their assignments"],
+    "experiences": ["Conducted doubt sessions for 50+ students ", 
+                    "Debugged student's codes and Significantly improving their understanding and performance", 
+                    "Achieved a 95% student satisfaction rate."],
     "imageSrc": "experience/Coding Ninjas.png"
   }
 ]
