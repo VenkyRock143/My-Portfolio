@@ -10,7 +10,7 @@ export const Hero = () => {
         <h1 className={`${styles.title} ${styles.animatedText}`}>Hi <span className={styles.emoji}>👋</span>, I'm Venkatesh</h1>
         <p className={styles.description}>
           I'm a Full Stack Developer with hands-on experience in building and maintaining web applications using the MERN stack. 
-          Proficient in Java, MongoDB, Express, React & Node!
+          Proficient in Java, MongoDB, Express, React and Node!
         </p>
         <a href="https://drive.google.com/file/d/1ePMxEv60eGd2HvlZBleBvIX9cvC91JnY/view?usp=sharing" 
         className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
