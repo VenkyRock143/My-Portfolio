@@ -4,7 +4,7 @@
     "imageSrc": "projects/Task Manager.jpg",
     "description": "The Task Manager app allows users to create, update, delete, and filter tasks.",
     "skills": ["React", "NodeJs", "MongoDB", "ExpressJs"],
-    "demo": "https://master--task-managerrock.netlify.app/",
+    "demo": "https://mern-task-manager-venky.netlify.app/",
     "source": "https://github.com/VenkyRock143/Mern-Task-Manager"
   },
   {
