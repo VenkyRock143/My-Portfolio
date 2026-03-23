@@ -1,103 +1,87 @@
-@import "../../vars.css";
+.section { background: var(--navy-900); }
 
-.container {
-  color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
+.heading {
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 400; font-style: italic;
+  letter-spacing: -0.02em; color: var(--white);
+  line-height: 1.05; margin-bottom: 3.5rem;
 }
+.heading span { color: var(--gold-400); font-style: normal; }
 
-.title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+.list { display: flex; flex-direction: column; }
+
+.item {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 3rem;
+  padding: 2.8rem 0;
+  border-top: 1px solid var(--border);
+  position: relative;
 }
+.item:last-child { border-bottom: 1px solid var(--border); }
 
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 50px;
+/* Hover left accent */
+.item::before {
+  content: '';
+  position: absolute; left: -1px; top: 0; bottom: 0; width: 0;
+  background: linear-gradient(to bottom, var(--gold-500), transparent);
+  transition: width 0.3s var(--ease);
 }
+.item:hover::before { width: 2px; }
 
-.experience {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+/* Ghost number */
+.ghost {
+  position: absolute; left: 0; top: 2.8rem;
+  font-family: var(--serif); font-style: italic;
+  font-size: 4rem; font-weight: 300;
+  color: rgba(212, 168, 67, 0.07);
+  line-height: 1; pointer-events: none; user-select: none;
+  transition: color 0.3s;
 }
+.item:hover .ghost { color: rgba(212, 168, 67, 0.14); }
 
-.experienceItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 17px;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  border-radius: 10px;
-  padding: 24px;
+/* Left */
+.period {
+  font-family: var(--mono); font-size: 0.73rem; color: var(--muted);
+  letter-spacing: 0.04em; line-height: 1.7; margin-bottom: 5px;
 }
-
-.experienceItem img {
-  width: 100px;
+.org { font-size: 0.87rem; color: var(--gold-400); font-weight: 500; margin-bottom: 8px; }
+.cert {
+  font-size: 0.72rem; color: var(--muted); font-family: var(--mono);
+  letter-spacing: 0.04em; text-decoration: underline;
+  text-underline-offset: 3px; transition: color 0.2s;
 }
+.cert:hover { color: var(--gold-400); }
 
-.experienceItemDetails {
-  font-family: var(--font-roboto);
+/* Right */
+.role {
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem); color: var(--white);
+  letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 6px;
 }
-
-.experienceItemDetails h3 {
-  font-size: 30px;
-  font-weight: 500;
+.badge {
+  display: inline-block; padding: 3px 12px; border-radius: 4px;
+  font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.08em;
+  background: var(--gold-dim); color: var(--gold-400);
+  border: 1px solid rgba(212, 168, 67, 0.18); margin-bottom: 1.2rem;
 }
-
-.experienceItemDetails p {
-  font-size: 20px;
-  font-weight: 300;
+.points {
+  list-style: none; display: flex; flex-direction: column; gap: 10px;
 }
-
-.experienceItemDetails ul {
-  margin-top: 6px;
-  list-style-position: inside;
-  font-size: 25px;
-  list-style-type: disc;
-  margin-left: 17px;
+.points li {
+  font-size: 0.92rem; color: rgba(247, 244, 238, 0.62); font-weight: 300;
+  line-height: 1.75; padding-left: 1.5rem; position: relative;
 }
-
-@media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
-  }
-
-  .experience {
-    width: 100%;
-    gap: 9px;
-  }
-  .title{
-    text-align: center;
-  }
-  .experienceItem {
-    display: flex;
-    flex-direction: column;
-  }
-  .experienceItemDetails h3{
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .experienceItemDetails p{
-    font-size: 14px;
-    font-weight: 500;
-  }
-  
-  .experienceItemDetails ul {
-    font-size: 14px;
-    font-weight: 300;
-  }
+.points li::before {
+  content: '—'; position: absolute; left: 0; top: 0;
+  color: var(--gold-500); font-family: var(--serif); font-style: italic;
 }
+.points li strong { color: var(--white2); font-weight: 500; }
 
-
-
+@media (max-width: 768px) {
+  .item  { grid-template-columns: 1fr; gap: 1rem; }
+  .ghost { display: none; }
+  .item::before { display: none; }
+  .left  { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+}

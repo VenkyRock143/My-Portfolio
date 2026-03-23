@@ -1,48 +1,64 @@
-import React, { useState } from "react";
+import { useEffect, useState } from 'react';
+import styles from './Navbar.module.css';
 
-import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utils";
+const NAV_LINKS = [
+  { href: '#about',      label: 'About'      },
+  { href: '#skills',     label: 'Skills'      },
+  { href: '#projects',   label: 'Projects'    },
+  { href: '#experience', label: 'Experience'  },
+];
 
 export const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [open,     setOpen]     = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 44);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const close = () => setOpen(false);
 
   return (
-    <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        Portfolio
-      </a>
-      <div className={styles.menu}>
-        <img
-          className={styles.menuBtn}
-          src={
-            menuOpen
-              ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
-          }
-          alt="menu-button"
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
-        <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-          onClick={() => setMenuOpen(false)}
-        >
+    <>
+      <header className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
+        <a href="#hero" className={styles.logo}>
+          <span className={styles.logoBadge}>VB</span>
+          Venkatesh Balusani
+        </a>
+
+        {/* Desktop links */}
+        <ul className={styles.links}>
+          {NAV_LINKS.map((l) => (
+            <li key={l.href}>
+              <a href={l.href}>{l.label}</a>
+            </li>
+          ))}
           <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" className={styles.hireBtn}>Hire Me</a>
           </li>
         </ul>
+
+        {/* Hamburger */}
+        <button
+          className={`${styles.hamburger} ${open ? styles.open : ''}`}
+          onClick={() => setOpen((v) => !v)}
+          aria-label="Toggle menu"
+        >
+          <span /><span /><span />
+        </button>
+      </header>
+
+      {/* Mobile drawer */}
+      <div className={`${styles.drawer} ${open ? styles.drawerOpen : ''}`}>
+        {NAV_LINKS.map((l) => (
+          <a key={l.href} href={l.href} onClick={close}>{l.label}</a>
+        ))}
+        <a href="#contact" className={styles.drawerCta} onClick={close}>
+          Let's Talk →
+        </a>
       </div>
-    </nav>
+    </>
   );
 };

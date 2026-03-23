@@ -1,66 +1,98 @@
 [
   {
-    "title": "Task Manager",
-    "imageSrc": "projects/Task Manager.jpg",
-    "description": "The Task Manager app allows users to create, update, delete, and filter tasks.",
-    "skills": ["React", "Express", "MongoDB", "Node"],
-    "demo": "https://mern-task-manager-venky.netlify.app/",
-    "source": "https://github.com/VenkyRock143/Mern-Task-Manager"
+    "id": "skycast",
+    "emoji": "🌤",
+    "tag": "AI-Powered",
+    "tagType": "ai",
+    "featured": true,
+    "title": "SkyCast — AI Weather Dashboard",
+    "description": "Production multi-user platform tracking unlimited cities with live weather data. Integrated <strong>Groq LLaMA 3.3 70B via LangChain</strong> for a floating AI assistant with persistent context, auto-generated city briefings, and natural-language queries. JWT auth, NodeCache TTL, rate limiting, CI/CD pipeline.",
+    "stack": ["Next.js 15", "React 19", "TypeScript", "Node.js", "MongoDB", "Groq API", "LangChain"],
+    "github": "https://github.com/VenkyRock143/SkyCast-AI",
+    "demo": "https://skycast-dashboard-ai.netlify.app/"
   },
   {
+    "id": "crypto-crash",
+    "emoji": "🎰",
+    "tag": "Real-Time",
+    "tagType": "rt",
+    "featured": true,
+    "title": "Crypto Crash — Multiplayer Game",
+    "description": "Real-time multiplayer crash game on <strong>Node.js + Socket.IO</strong>. Concurrent WebSocket events, server-side game logic, live crash-multiplier broadcasting, and CoinMarketCap live price feeds. MVC architecture with complete API documentation.",
+    "stack": ["React", "Socket.IO", "Node.js", "Express", "MongoDB", "CoinMarketCap"],
+    "github": "https://github.com/VenkyRock143/Crypto-Crash-Game",
+    "demo": "https://venky-crypto-crash-game.netlify.app/"
+  },
+  {
+    "id": "task-manager",
+    "emoji": "✅",
+    "tag": "Full Stack",
+    "tagType": "fs",
+    "featured": true,
+    "title": "MERN Task Manager",
+    "description": "<strong>JWT authentication with HTTP-only cookies</strong>, role-based access control, userId-scoped Mongoose queries for strict data isolation. Socket.io real-time updates and a modular REST API with complete deployment documentation.",
+    "stack": ["React.js", "Node.js", "Express", "MongoDB", "Socket.IO", "JWT"],
+    "github": "https://github.com/VenkyRock143/Mern-Task-Manager",
+    "demo": "https://mern-task-manager-venky.netlify.app/"
+  },
+  {
+    "id": "meal-app",
+    "emoji": "🍽",
+    "tag": "",
+    "tagType": "",
+    "featured": false,
+    "title": "Meal Recipe App",
+    "description": "Live API recipe search with responsive UI.",
+    "stack": ["HTML", "CSS", "JS"],
+    "github": "https://github.com/VenkyRock143/meal.github.io",
+    "demo": "https://venky-meal-app.netlify.app/"
+  },
+  {
+    "id": "habit-tracker",
+    "emoji": "📋",
+    "tag": "",
+    "tagType": "",
+    "featured": false,
     "title": "Habit Tracker",
-    "imageSrc": "projects/habittracker.gif",
-    "description": "We can keep track of our daily habits using these app.",
-    "skills": ["Node", "Express", "MangoDB", "ejs"],
-    "demo": "https://habi-tracker.onrender.com/",
-    "source": "https://github.com/VenkyRock143/Habit-Tracker"
+    "description": "Daily habits via EJS and MongoDB.",
+    "stack": ["Node", "Express", "MongoDB"],
+    "github": "https://github.com/VenkyRock143/Habit-Tracker",
+    "demo": "https://habi-tracker.onrender.com/"
   },
   {
-    "title": "Meal App",
-    "imageSrc": "projects/mealapp.gif",
-    "description": "We can fetch all types food reciepe using this app.",
-    "skills": ["HTML", "CSS", "Javascript"],
-    "demo": "https://venky-meal-app.netlify.app/",
-    "source": "https://github.com/VenkyRock143/meal.github.io"
+    "id": "codial",
+    "emoji": "📰",
+    "tag": "",
+    "tagType": "",
+    "featured": false,
+    "title": "Codial Platform",
+    "description": "Content platform with MVC + Sass.",
+    "stack": ["Node", "MongoDB", "Sass"],
+    "github": "https://github.com/VenkyRock143/Codial",
+    "demo": "https://codial-qtar.onrender.com"
   },
   {
-    "title": "Codial",
-    "imageSrc": "projects/codial.gif",
-    "description": "Codial is a web application designed for managing and sharing content.",
-    "skills": ["Node", "Express", "MangoDB", "sass"],
-    "demo": "https://codial-qtar.onrender.com",
-    "source": "https://github.com/VenkyRock143/Codial"
+    "id": "ipod",
+    "emoji": "🎵",
+    "tag": "",
+    "tagType": "",
+    "featured": false,
+    "title": "iPod Player",
+    "description": "React player with ZingTouch gestures.",
+    "stack": ["React", "ZingTouch"],
+    "github": "https://github.com/VenkyRock143/iPod.github.io",
+    "demo": "https://venky-ipod-app.netlify.app/"
   },
   {
-    "title": "Ipod Music Player",
-    "imageSrc": "projects/ipod.gif",
-    "description": "These iPod Music player have made it easy for users to listen music on the go with a web app",
-    "skills": ["React", "zingtouch", "loader-util"],
-    "demo": "https://venky-ipod-app.netlify.app/",
-    "source": "https://github.com/VenkyRock143/iPod.github.io"
-  },
-  {
-    "title": "CSV Upload",
-    "imageSrc": "projects/csvupload.gif",
-    "description": "By using this app we can upload any number of .csv files and we can view them.",
-    "skills": ["Node", "Express", "MangoDB", "csv"],
-    "demo": "https://csv-upload-1-pk7u.onrender.com/",
-    "source": "https://github.com/VenkyRock143/CSV-Upload"
-  },
-  {
-    "title": "Music Player",
-    "imageSrc": "projects/musicplayer.gif",
-    "description": "Music player application developed using HTML, CSS, and JavaScript.",
-    "skills": ["HTML", "CSS", "Javascript"],
-    "demo": "https://venkyrock143.github.io/Music-Player.github.io/",
-    "source": "https://github.com/VenkyRock143/Music-Player.github.io"
-  },
-  {
-    "title": "Alarm Clock",
-    "imageSrc": "projects/alarm.gif",
-    "description": "Alarm clock application developed using only HTML, CSS, and JavaScript",
-    "skills": ["HTML", "CSS", "Javascript"],
-    "demo": "https://venky-alarm-clock.netlify.app/",
-    "source": "https://github.com/VenkyRock143/Alarm-Clock.github.io"
+    "id": "csv-upload",
+    "emoji": "📂",
+    "tag": "",
+    "tagType": "",
+    "featured": false,
+    "title": "CSV Upload & Viewer",
+    "description": "Multi-file CSV upload and table viewer.",
+    "stack": ["Node", "Multer", "MongoDB"],
+    "github": "https://github.com/VenkyRock143/CSV-Upload",
+    "demo": "https://csv-upload-1-pk7u.onrender.com/"
   }
 ]

@@ -1,13 +1,30 @@
 [
   {
-    "role": " Teaching Assistant",
-    "organisation": "Coding Ninjas",
-    "startDate": "Dec, 2022",
-    "endDate": "Mar, 2023",
-    "experiences": ["Conducted doubt sessions for 50+ students ", 
-                    "Debugged student's codes and Significantly improved their performance", 
-                    "Achieved a 95% student satisfaction rate."],
-    "imageSrc": "experience/Coding Ninjas.png"
+    "id": "coding-ninjas",
+    "num": "01",
+    "period": ["Dec 2022", "Mar 2023"],
+    "org": "Coding Ninjas",
+    "role": "Teaching Assistant",
+    "badge": "INTERNSHIP · REMOTE",
+    "cert": "#",
+    "points": [
+      "Led <strong>50+ live doubt-resolution sessions</strong> on DSA and Full Stack Development — real-time debugging under pressure.",
+      "Assisted <strong>100+ students</strong> with code reviews, architectural feedback, and debugging across backend and frontend codebases.",
+      "Achieved a <strong>95% student satisfaction rate</strong> — consistently ranked among the top Teaching Assistants across all cohorts."
+    ]
+  },
+  {
+    "id": "independent",
+    "num": "02",
+    "period": ["2023", "Present"],
+    "org": "Self-Directed",
+    "role": "Independent Engineering",
+    "badge": "PERSONAL / FREELANCE",
+    "cert": "",
+    "points": [
+      "Designed, built, and deployed <strong>10+ full-stack applications</strong> covering real-time systems, AI/LLM integrations, and MERN apps.",
+      "Tackled production concerns: JWT auth flows, WebSocket concurrency, API rate limiting, caching strategies, and full CI/CD pipelines.",
+      "Independently expanded into <strong>Next.js 15, TypeScript, Groq LLaMA integration</strong> — self-directed, always ahead of the curve."
+    ]
   }
 ]
-

@@ -1,35 +1,53 @@
-import React from "react";
-
-import styles from "./Experience.module.css";
-import experience from "../../data/experience.json";
-import { getImageUrl } from "../../utils";
+import { useRef } from 'react';
+import { useFadeIn } from '../../hooks/useFadeIn';
+import data from '../../data/experience.json';
+import styles from './Experience.module.css';
 
 export const Experience = () => {
+  const ref = useRef(null);
+  useFadeIn(ref);
+
   return (
-    <section className={styles.container} id="experience">
-      <h2 className={styles.title}>Experience</h2>
-      <div className={styles.content}>
-        <ul className={styles.experience}>
-          {experience.map((experienceItem, id) => {
-            return (
-              <li key={id} className={styles.experienceItem}>
-                <img
-                  src={getImageUrl(experienceItem.imageSrc)}
-                  alt={`${experienceItem.organisation} Logo`}
-                />
-                <div className={styles.experienceItemDetails}>
-                  <h3>{`${experienceItem.role}, ${experienceItem.organisation}`}</h3>
-                  <p>{`${experienceItem.startDate} - ${experienceItem.endDate}`}</p>
-                  <ul>
-                    {experienceItem.experiences.map((experience, id) => {
-                      return <li key={id}>{experience}</li>;
-                    })}
-                  </ul>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+    <section id="experience" className={`${styles.section} section`} ref={ref}>
+      <div className="wrap pad">
+        <p className="eyebrow rv">Experience</p>
+        <h2 className={`${styles.heading} rv d1`}>
+          Where I've <span>worked</span>
+        </h2>
+
+        <div className={styles.list}>
+          {data.map((exp) => (
+            <div key={exp.id} className={`${styles.item} rv`}>
+              {/* Ghost number */}
+              <span className={styles.ghost}>{exp.num}</span>
+
+              {/* Left col */}
+              <div className={styles.left}>
+                <p className={styles.period}>
+                  {exp.period[0]}<br />{exp.period[1]}
+                </p>
+                <p className={styles.org}>{exp.org}</p>
+                {exp.cert && (
+                  <a href={exp.cert} className={styles.cert}
+                     target="_blank" rel="noopener noreferrer">
+                    Certificate ↗
+                  </a>
+                )}
+              </div>
+
+              {/* Right col */}
+              <div className={styles.right}>
+                <h3 className={styles.role}>{exp.role}</h3>
+                <span className={styles.badge}>{exp.badge}</span>
+                <ul className={styles.points}>
+                  {exp.points.map((pt, i) => (
+                    <li key={i} dangerouslySetInnerHTML={{ __html: pt }} />
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

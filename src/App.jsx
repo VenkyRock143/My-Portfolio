@@ -1,23 +1,27 @@
-import styles from "./App.module.css";
-import { About } from "./components/About/About";
-import { Contact } from "./components/Contact/Contact";
-import { Skills } from "./components/Skills/Skills";
-import { Experience } from "./components/Experience/Experience";
-import { Hero } from "./components/Hero/Hero";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Projects } from "./components/Projects/Projects";
+import './vars.css';
+import './index.css';
+
+import { Navbar }     from './components/Navbar/Navbar';
+import { Hero }       from './components/Hero/Hero';
+import { About }      from './components/About/About';
+import { Skills }     from './components/Skills/Skills';
+import { Projects }   from './components/Projects/Projects';
+import { Experience } from './components/Experience/Experience';
+import { Education }  from './components/Education/Education';
+import { Contact }    from './components/Contact/Contact';
 
 function App() {
   return (
-    <div className={styles.App}>
+    <>
       <Navbar />
       <Hero />
       <About />
-      <Skills/>
-      <Experience />
+      <Skills />
       <Projects />
+      <Experience />
+      <Education />
       <Contact />
-    </div>
+    </>
   );
 }
 

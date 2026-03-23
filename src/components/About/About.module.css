@@ -1,104 +1,92 @@
-@import "../../vars.css";
+.section { background: var(--navy-800); }
 
-.container {
+.heading {
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 3.5rem;
+}
+.heading span { color: var(--gold-400); font-style: normal; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(2.5rem, 6vw, 5.5rem);
+  align-items: start;
+}
+
+/* Bio */
+.bio p {
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  color: rgba(247, 244, 238, 0.65);
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 1.1rem;
+}
+.bio strong { color: var(--white2); font-weight: 500; }
+.bio p:last-of-type { margin-bottom: 1.8rem; }
+
+.badges { display: flex; flex-wrap: wrap; gap: 8px; }
+.badge {
+  padding: 5px 14px;
+  border-radius: 4px;
+  font-size: 0.77rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border: 1px solid;
+}
+.gold { color: var(--gold-400); border-color: rgba(212,168,67,.25);  background: var(--gold-dim);  }
+.teal { color: var(--teal);     border-color: rgba(78,205,196,.22);  background: var(--teal-dim);  }
+.blue { color: var(--blue-acc); border-color: rgba(126,184,255,.22); background: var(--blue-dim);  }
+
+/* Cards */
+.cardStack { display: flex; flex-direction: column; gap: 12px; }
+.card {
+  background: var(--navy-750);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 1.4rem;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
   position: relative;
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
-  z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  overflow: hidden;
 }
-
-.title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold-500), transparent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s var(--ease);
 }
+.card:hover { border-color: var(--gold-edge); transform: translateX(4px); }
+.card:hover::before { transform: scaleY(1); }
 
-.content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.ico {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.15rem;
 }
+.icoG { background: var(--gold-dim);  }
+.icoT { background: var(--teal-dim);  }
+.icoB { background: var(--blue-dim);  }
 
-.aboutImage {
-  width: 35%;
+.card h3 { font-size: 0.93rem; font-weight: 600; color: var(--white2); margin-bottom: 4px; }
+.card p  { font-size: 0.83rem; color: var(--muted); font-weight: 300; line-height: 1.65; }
+
+@media (max-width: 860px) {
+  .grid { grid-template-columns: 1fr; gap: 2.5rem; }
 }
-
-.aboutItems {
-  color: var(--color-text);
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.aboutItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 20px;
-  list-style: none;
-  padding: 25px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: 0.4s;
-}
-
-.aboutItem:hover {
-  background-size: 100% 100%;
-}
-
-.aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.aboutItem p {
-  font-size: 25px;
-}
-
-@media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .title{
-    text-align: center;
-  }
-
-  .content {
-    flex-direction: column;
-  }
-
-  .aboutImage {
-    display: none;
-  }
-
-  .aboutItems {
-    margin-top: 29px;
-    
-  }
-
-  .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
-    flex-direction: column;
-    
-  }
-  .aboutItem p{
-  font-size: 14px; 
-  }
-  .aboutItem h3{
-    font-size: 20px; 
-    }
+@media (hover: none) {
+  .card:hover { transform: none; }
 }
