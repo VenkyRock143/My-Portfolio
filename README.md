@@ -117,7 +117,7 @@ If you're hiring, collaborating, or just want to talk code — I'm always open.
 - 📧 venky.balusani1@gmail.com
 - 💼 [LinkedIn](https://www.linkedin.com/in/venkatesh-balusani-9724aa180/)
 - 🐙 [GitHub](https://github.com/VenkyRock143)
-- ⚡ [LeetCode](https://leetcode.com/VenkyRock143)
+- ⚡ [LeetCode](https://leetcode.com/u/venkycrash45/)
 
 ---
 
