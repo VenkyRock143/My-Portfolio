@@ -52,6 +52,7 @@ A production-grade multi-user weather platform that tracks unlimited global citi
 
 Built with: `Next.js 15` `React 19` `TypeScript` `Node.js` `Express` `MongoDB` `Groq API` `LangChain`
 → JWT auth, NodeCache TTL, Express rate limiting, and a full CI/CD pipeline via GitHub Actions
+→ [Live Demo](https://skycast-dashboard-ai.netlify.app) · [Source](https://github.com/VenkyRock143/SkyCast-AI)
 
 ---
 
@@ -60,6 +61,7 @@ A real-time multiplayer crash game built on Node.js and Socket.IO. The server ha
 
 Built with: `React` `Socket.IO` `Node.js` `Express` `MongoDB` `CoinMarketCap API`
 → MVC architecture, modular REST API, complete setup documentation
+→ [Live Demo](https://venky-crypto-crash-game.netlify.app/) · [Source](https://github.com/VenkyRock143/Crypto-Crash-Game)
 
 ---
 
